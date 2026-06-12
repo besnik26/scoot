@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import 'assets/styles/colors.scss';
+
+
+//General
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Headings, Typography & Elements
+
+h1{
+    font-family: "Space Mono", monospace;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+}
+
+h2{
+    font-family: "Space Mono", monospace;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+}
+
+h3{
+    font-family: "Space Mono", monospace;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+}
+
+h4{
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+}
+
+p, body{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.custom-btn{
+    font-family: "Space Mono", monospace;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #ffffff;
+    background-color: $yellow;
+    border: 2px solid $yellow;
+    padding: 14px 39px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        background-color: #ffffff;
+        color: $yellow;
+    }
+}
+
+
+
+
