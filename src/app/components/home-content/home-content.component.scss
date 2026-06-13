@@ -1,0 +1,21 @@
+@use "colors" as *;
+
+
+.card-container{
+    width: 100%;
+    margin: 160px 0 0 0;
+    display: flex;
+    column-gap: 30px;
+    padding: 0 165px;
+}
+
+.card{
+    max-width: 350px;
+    h4{
+        margin: 40px 0 27px 0;
+        color: $darkNavy;
+    }
+    p{
+        color: $dimGray;
+    }
+}
