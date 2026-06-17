@@ -1,1 +1,43 @@
 @use "colors" as *;
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-image: url(../../../assets/images/footer/footer-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 102px 0;
+}
+
+.footer-container{
+    max-width: 1110px;
+    width: 100%;
+}
+.footer-app{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h2{
+        color: #ffffff;
+    }
+   
+    .app-container{
+        display: flex;
+        column-gap: 18px;
+        align-items: center;
+        .app{
+            background-color: $lightGray;
+            display: flex;
+            align-items: center;
+            column-gap: 11px;
+            padding: 8px 16px 9px 16px;
+            color: $darkNavy;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+    }
+}

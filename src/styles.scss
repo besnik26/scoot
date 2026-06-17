@@ -42,10 +42,23 @@ h4{
     letter-spacing: -1.07px;
 }
 
+h5{
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.89px;
+}
+
 p, body{
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     line-height: 25px;
+}
+
+small{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 10px;
+
 }
 
 .custom-btn{
