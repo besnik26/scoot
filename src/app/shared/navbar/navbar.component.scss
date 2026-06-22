@@ -22,6 +22,7 @@
                     font-family: "Space Mono", monospace;
                     cursor: pointer;
                     color: $dimGray;
+                    text-decoration: none;
                     &:hover{
                         color: $yellow;
                     }

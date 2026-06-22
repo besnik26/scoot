@@ -1,0 +1,32 @@
+.hero-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.about{
+    background-image: url(../../../assets/images/about/about-hero.png); 
+}
+
+.careers{
+    background-image: url(../../../assets/images/careers/career-hero.png); 
+}
+
+.location{
+    background-image: url(../../../assets/images/location/location-hero.png); 
+}
+
+
+.hero{
+    max-width: 1110px;
+    width: 100%;
+    padding: 62px 0px 72px 0px;
+    
+}
+h1{
+    color: white;
+}
