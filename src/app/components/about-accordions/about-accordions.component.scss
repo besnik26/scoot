@@ -1,0 +1,59 @@
+@use "colors" as *;
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+    .cover{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 64px;
+        max-width: 1110px;
+    }
+}
+
+.accordion-div{
+  display: flex;
+  width: 100%;
+  column-gap: 95px;
+}
+
+cdk-accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 730px;
+    transition: 0.2s;
+
+}
+
+cdk-accordion-item {
+  width: 100%;
+  background-color: $snow;
+  transition: 0.2s;
+  color: $darkNavy;
+  &:hover {
+    background-color: $lightYellow;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 40px;
+  cursor: pointer;
+  
+}
+
+h3{color:$darkNavy}
+.arrow{
+  transition: 0.2s;
+}
+.content-div{
+  padding: 0 40px 32px 40px;
+  transition: 0.2s;
+}

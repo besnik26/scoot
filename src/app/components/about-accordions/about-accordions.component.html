@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="cover">
+    <div class="accordion-div">
+      <h3>How it works</h3>
+      <cdk-accordion>
+        @for (item of items_1; track item) {
+          <cdk-accordion-item #accordionItem="cdkAccordionItem">
+            <div class="title" (click)="accordionItem.toggle()">
+              <h4>
+                {{ item.title }}
+              </h4>
+              <img
+                class="arrow"
+                [style.transform]="
+                  accordionItem.expanded ? 'rotate(0deg)' : 'rotate(180deg)'
+                "
+                src="../../../assets/images/about/accordion-arrow.png"
+                alt="arrow"
+              />
+            </div>
+
+            @if (accordionItem.expanded) {
+              <div class="content-div">
+                {{ item.content }}
+              </div>
+            }
+          </cdk-accordion-item>
+        }
+      </cdk-accordion>
+    </div>
+
+    <div class="accordion-div">
+      <h3>Safe driving</h3>
+      <cdk-accordion>
+        @for (item of items_2; track item) {
+          <cdk-accordion-item #accordionItem="cdkAccordionItem">
+            <div class="title" (click)="accordionItem.toggle()">
+              <h4>
+                {{ item.title }}
+              </h4>
+              <img
+                class="arrow"
+                [style.transform]="
+                  accordionItem.expanded ? 'rotate(0deg)' : 'rotate(180deg)'
+                "
+                src="../../../assets/images/about/accordion-arrow.png"
+                alt="arrow"
+              />
+            </div>
+
+            @if (accordionItem.expanded) {
+              <div class="content-div">
+                {{ item.content }}
+              </div>
+            }
+          </cdk-accordion-item>
+        }
+      </cdk-accordion>
+    </div>
+  </div>
+</div>
