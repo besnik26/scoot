@@ -1,0 +1,85 @@
+<div class="content-container">
+    <div class="cover">
+        
+        <div class="content content-div-1">
+            <div class="description">
+                <h2>
+                    Care to join our  <br>
+                    mission?
+                </h2>
+                <p>
+                   We're always looking for ambitious individuals to help us on our journey. 
+                   If you're passionate about our mission to provide clean, 
+                   accessible transport to improve urban living we want to hear from you!
+                </p>
+                <button class="custom-btn">Say hello</button>
+
+            </div>
+            <img src="../../../assets/images/careers/content-img-1.png" alt="content-img">
+
+        </div>
+
+
+        <h2 class="value-title">Why join us ?</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="../../../assets/images/about/card-img-1.png" alt="">
+                    <div class="circle">
+                        <h4>01</h4>
+                    </div>
+                </div>
+                <h4 class="card-title">Our tech</h4>
+                <p>
+                    We're using cutting edge technology to drive accessible urban transportation forward. 
+                    Our fully electric scooters are a joy to ride!
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="../../../assets/images/about/card-img-2.png" alt="">
+                    <div class="circle">
+                        <h4>02</h4>
+                    </div>
+                </div>
+                <h4 class="card-title">Our integrity</h4>
+                <p>
+                    We are fully committed to deliver a great yet safe, 
+                    sustainable micro-mobility experience in every city we serve.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="img-div">
+                    <img src="../../../assets/images/about/card-img-3.png" alt="">
+                    <div class="circle">
+                        <h4>03</h4>
+                    </div>
+                </div>
+                <h4 class="card-title">Our community</h4>
+                <p>
+                    We support every community we serve. All workers are paid a 
+                    living wage based on their location and are Scoot employees.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="jobs-container">
+            @for (job of jobs; track $index) {
+                <div class="job">
+                    <div class="info">
+                        <h4>{{job.title}}</h4>
+                        <p>{{job.location}}</p>
+                    </div>
+
+                    <button class="custom-btn">Apply</button>
+                </div>
+            }
+        </div>
+
+    </div>    
+</div>

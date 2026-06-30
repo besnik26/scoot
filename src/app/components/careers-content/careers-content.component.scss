@@ -1,0 +1,110 @@
+@use "colors" as *;
+
+
+
+h2{
+    color: $darkNavy;
+}
+
+p{
+    color: $dimGray;
+}
+
+.content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .cover{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        max-width: 1110px;
+
+    }
+}
+
+
+.content{
+    width: 100%;
+    display: flex;
+    column-gap: 200px;
+    align-items: center;
+
+
+}
+.description{
+    max-width: 445px;
+    p{
+        margin: 24px 0 40px 0;
+    }
+}
+
+.content-div-1{
+    flex-direction: row;
+    margin-bottom: 120px;
+    img{
+        border-radius: 50%;
+    }
+}
+
+.value-title{
+    text-align: center;
+    margin-bottom: 103px;
+}
+
+
+.card-container{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .card-title{
+        margin: 87px 0px 27px 0px;
+    }
+
+    .img-div{
+        position: relative;
+        .circle{
+            position: absolute;
+            left: 50%;
+            bottom: -55px;
+            
+            transform: translateX(-50%);
+            background-color: $yellow;
+            border-radius: 50%;
+            max-width: 96px;
+            padding: 34px;
+            color: $darkNavy;
+        }
+    }
+}
+
+.jobs-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 160px;
+
+}
+.job{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $snow;
+    padding: 32px 64px 35px 40px;
+    .info{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+}
