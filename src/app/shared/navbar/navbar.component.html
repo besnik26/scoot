@@ -24,5 +24,9 @@
                     <button class="custom-btn">Get scootin</button>
                 </div>
         </div>
+
+        @if (isOpen) {
+            <div class="overlay" (click)="isOpen=false"></div>
+        }
     </div>
 </div>

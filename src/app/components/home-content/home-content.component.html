@@ -1,11 +1,14 @@
-<div class="card-container">
-    @for (card of cards; track $index) {
-        <div class="card">
-            <img [src]="card.imgPath" alt="card-img">
-            <h4>{{card.title}}</h4>
-            <p>{{card.description}}</p>
-        </div>
-    }
+
+<div class="content-container">
+    <div class="card-container">
+        @for (card of cards; track $index) {
+            <div class="card">
+                <img [src]="card.imgPath" alt="card-img">
+                <h4>{{card.title}}</h4>
+                <p>{{card.description}}</p>
+            </div>
+        }
+    </div>
 </div>
 
 

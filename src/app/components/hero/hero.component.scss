@@ -6,9 +6,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 153px 0 152px 165px;
+    padding: 153px 0px 152px 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
     
-
+    .hero-div{
+        max-width: 1114px;
+        width: 100%;
+        position: relative;
+    }
 }
 
 h1{
@@ -23,4 +30,22 @@ h1{
         color: #ffffff;
         margin-bottom: 40px;
     }
+}
+
+.left-line{
+    position: absolute;
+    left: 0px;
+    top: 354px;
+}
+
+.right-line{
+    position: absolute;
+    right: 288px;
+    top: 355px;
+}
+
+.oval-img{
+    position: absolute;
+    bottom: -100px;
+    right: -70px;
 }

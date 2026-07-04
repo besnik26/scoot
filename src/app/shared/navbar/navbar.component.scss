@@ -70,6 +70,16 @@
             .mobile-logo{
                display: block;
             }
+
+            .overlay{
+                position: absolute;
+                height: calc(100dvh - 64px);
+                width: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                z-index: 9;
+                left: 0;
+                top: 64px;
+            }
         
             .navigation-div{
                 position: absolute;
@@ -85,8 +95,9 @@
                 row-gap: 30px;
                 margin-top: 0;
                 transition: left 0.5s ease;
-                z-index: -2;
+                z-index: 10;
                 background-color: $darkNavy;
+
                 
             }
         
