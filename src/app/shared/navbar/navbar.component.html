@@ -1,15 +1,28 @@
-<div class="navbar">
+<div class="navbar" >
     <div class="container">
-        <div class="navigation-div">
-            <img routerLink="/" src="../../../assets/images/scoot-logo.svg" alt="scoot-logo">
-            <div class="links">
-                <a routerLink="/about">About</a>
-                <a routerLink="/locations">Location</a>
-                <a routerLink="/careers">Careers</a>
-            </div>
-        </div>
-        <div class="button">
-            <button class="custom-btn">Get scootin</button>
+        
+        @if (!isOpen) {
+            <img class="hamburger-icon" src="../../../assets/images/hamburger-icon.svg" alt="hamburger" (click)="toggleNavbar()">
+        }
+
+        @if (isOpen) {
+            <img class="hamburger-icon" src="../../../assets/images/hamburger-close.svg" alt="hamburger" (click)="toggleNavbar()">
+        }
+
+
+        <img src="../../../assets/images/scoot-logo-mobile.png" alt="mobile-logo" class="mobile-logo">
+        <div class="navigation-div" [ngClass]="{'open': isOpen}">
+                <div class="navigation-links" >
+                    <img routerLink="/" src="../../../assets/images/scoot-logo.svg" alt="scoot-logo">
+                    <div class="links">
+                        <a routerLink="/about">About</a>
+                        <a routerLink="/locations">Location</a>
+                        <a routerLink="/careers">Careers</a>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="custom-btn">Get scootin</button>
+                </div>
         </div>
     </div>
 </div>

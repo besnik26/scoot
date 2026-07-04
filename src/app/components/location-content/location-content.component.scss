@@ -1,0 +1,46 @@
+@use "colors" as *;
+
+h2{
+    color: $darkNavy;
+}
+
+p{
+    color: $dimGray;
+}
+
+
+.content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .cover{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        max-width: 1110px;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+.map-img{
+    width: 100%;
+    margin-bottom: 120px ;
+}
+
+.message-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 120px;
+    .desc{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        p{
+            max-width: 445px;
+        }
+    }
+}

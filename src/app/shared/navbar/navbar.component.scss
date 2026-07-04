@@ -5,13 +5,24 @@
     padding: 22px 165px 21px 168px;
     display: flex;
     justify-content: center;
+    position: relative;
+    background-color: white;
     .container{
         max-width: 1106px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .mobile-logo{
+            display: none;
+        }
         .navigation-div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .navigation-links{
             display: flex;
             column-gap: 58px;
             align-items: center;
@@ -32,6 +43,74 @@
                 cursor: pointer;
             }
         }
+        .hamburger-icon{
+            display: none;
+        }
     }
 
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        justify-content: flex-start;
+        padding: 22px 33px;
+        z-index: 30;
+
+
+        .container{
+            justify-content: center;
+            .hamburger-icon{
+                display: block;
+                position: absolute;
+                left: 33px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .mobile-logo{
+               display: block;
+            }
+        
+            .navigation-div{
+                position: absolute;
+                top: 64px;
+                left: -300px;
+                width: 250px;
+                height: calc(100dvh - 64px);
+                background: white;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 64px 0 24px 32px;
+                row-gap: 30px;
+                margin-top: 0;
+                transition: left 0.5s ease;
+                z-index: -2;
+                background-color: $darkNavy;
+                
+            }
+        
+            .navigation-div.open {
+                left: 0;
+            }
+
+
+            .navigation-links{
+                flex-direction: column;
+                align-items: flex-start;
+                img{
+                    display: none;
+                }
+                .links{
+                    flex-direction: column;
+                    row-gap: 24px;
+                    a{
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+    }
 }
