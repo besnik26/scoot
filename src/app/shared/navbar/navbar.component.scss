@@ -50,6 +50,13 @@
 
 }
 
+@media (max-width: 1024px) {
+    .navbar{
+        padding: 22px 40px 21px 39px;
+    }
+
+}
+
 @media (max-width: 768px) {
     .navbar{
         justify-content: flex-start;

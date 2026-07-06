@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
     
     .hero-div{
         max-width: 1114px;
@@ -41,11 +42,68 @@ h1{
 .right-line{
     position: absolute;
     right: 288px;
-    top: 355px;
+    bottom: 157px;
 }
 
 .oval-img{
     position: absolute;
     bottom: -100px;
     right: -70px;
+}
+
+@media (max-width: 1024px) {
+    .hero{
+        padding: 137px 0px 217px 0px;
+        max-height: none;
+
+        .hero-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    h1{
+        margin-bottom: 24px;
+    }
+    .hero-desc{
+        margin-left: 0px;
+        p{
+            margin-bottom: 32px;
+        }
+    }
+
+    .left-line{
+        display: none;
+    }
+
+    .right-line{
+        right: auto;
+        left: -127px;
+        bottom: 39px;
+    }
+
+    .oval-img{
+        bottom: -178px;
+        right: -33px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero{
+        padding: 115px 32px 179px 32px;
+
+    }
+    .right-line{
+        right: auto;
+        bottom: 34px;
+        left: -312px;
+    }
+
+    .oval-img{
+        display: none;
+    }
+
 }
