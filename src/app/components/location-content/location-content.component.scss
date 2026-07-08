@@ -44,3 +44,24 @@ p{
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .cover{
+        padding: 0 40px;
+    }
+
+    .map-img{
+        margin-bottom: 64px;
+    }
+
+    .message-div{
+        flex-direction: column;
+        text-align: center;
+        row-gap: 40px;
+        .desc{
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    }
+
+}

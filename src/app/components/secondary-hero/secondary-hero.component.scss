@@ -28,31 +28,32 @@
     padding: 62px 0px 72px 0px;
     
 }
-.oval-img{
-    display: none;
-}
+
 
 h1{
     color: white;
 }
 
 @media (max-width: 1024px) {
+    .hero-container{
+        margin-bottom: 144px;
+    }
+
     .hero{
         padding: 72px 0px 72px 97px;
     }
 
-    .oval-img{
-        position: absolute;
-        display: block;
-        right: -31px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+   
 
 }
 
 
 @media (max-width: 768px) {
+
+    .hero-container{
+        margin-bottom: 72px;
+    }
+
     .oval-img{
         display: none;
     }

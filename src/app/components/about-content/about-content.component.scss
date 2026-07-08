@@ -94,6 +94,55 @@ p{
 
 @media (max-width: 1024px) {
 
-    
+    .content{
+        text-align: center;
+        row-gap: 56px;
+    }
+
+    .description{
+        p{
+            margin: 40px 0 0 0;
+        }
+    }
+
+    .content-div-1{
+        flex-direction: column-reverse;
+    }
+
+    .content-div-2{
+        flex-direction: column;
+    }
+
+    .value-title{
+        margin-bottom: 105px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        row-gap: 55px;
+    }
+
+    .card{
+        p{
+            max-width: 457px;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .content{
+        img{
+            max-width: 311px;
+        }
+    }
+
+    .description{
+        p{
+            margin: 32px 0 0 0;
+        }
+    }
 
 }
