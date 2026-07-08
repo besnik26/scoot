@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 120px;
+    position: relative;
 }
 
 .about{
@@ -27,6 +28,37 @@
     padding: 62px 0px 72px 0px;
     
 }
+.oval-img{
+    display: none;
+}
+
 h1{
     color: white;
+}
+
+@media (max-width: 1024px) {
+    .hero{
+        padding: 72px 0px 72px 97px;
+    }
+
+    .oval-img{
+        position: absolute;
+        display: block;
+        right: -31px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .oval-img{
+        display: none;
+    }
+
+    .hero{
+        text-align: center;
+        padding: 60px 0px 60px 0px;
+    }
 }
