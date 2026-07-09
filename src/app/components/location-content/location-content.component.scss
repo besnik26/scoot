@@ -29,6 +29,11 @@ p{
     margin-bottom: 120px ;
 }
 
+
+.map-mobile, .mobile-info{
+    display: none;    
+}
+
 .message-div{
     display: flex;
     justify-content: space-between;
@@ -61,6 +66,37 @@ p{
         .desc{
             flex-direction: column;
             row-gap: 40px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .map-img{
+        display: none;
+
+    }
+    .map-mobile{
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .mobile-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-bottom: 72px;
+        .info{
+            background-color: rgba(252, 184, 43, 15%);
+            padding: 22px 0;
+            width: 100%;
+            text-align: center;
+            h4{
+                color: $darkNavy;
+            }
         }
     }
 
